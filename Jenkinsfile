@@ -44,7 +44,7 @@ pipeline {
                     test -f dist/index.html
                     test -f dist/style.css
 
-                    grep -qi "<html>" dist/index.html
+                    grep -qi "<html" dist/index.html
                     grep -qi "<title>" dist/index.html
                     grep -qi "</html>" dist/index.html
 
